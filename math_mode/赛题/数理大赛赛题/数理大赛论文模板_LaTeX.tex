@@ -1,0 +1,151 @@
+% !TeX program = xelatex
+% 使用 UTF-8 编码；建议在完整 TeX Live / MiKTeX 环境中用 XeLaTeX 编译两遍。
+% 下列字号、字体与行距是模板默认值，不是竞赛的统一要求。
+% 删除所有【】提示与未选声明；不得删除实际使用AI时必须保留的披露。
+\documentclass[UTF8,11pt,a4paper,fontset=fandol]{ctexart}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{fvextra}
+\usepackage{hyperref}
+\hypersetup{hidelinks,pdfauthor={},pdftitle={电力市场中的用电申报与风险决策}}
+% 页眉与页脚
+\setlength{\headheight}{18pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+% 居中页眉
+\fancyhead[C]{%
+    \small\bfseries
+    华南理工大学第二十五届“三新集团杯”数理大赛
+}
+
+% 居中页码
+\fancyfoot[C]{\thepage}
+
+% 页眉下方横线
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% 第一页也使用相同页眉
+\fancypagestyle{plain}{%
+    \fancyhf{}
+    \fancyhead[C]{%
+        \small\bfseries
+        华南理工大学第二十五届“三新集团杯”数理大赛
+    }
+    \fancyfoot[C]{\thepage}
+    \renewcommand{\headrulewidth}{0.4pt}
+}
+\fancyfoot[C]{\thepage}
+ 
+\setlength{\parindent}{2em}
+\setlength{\parskip}{4pt}
+\linespread{1.15}
+\ctexset{section={format=\large\bfseries},subsection={format=\normalsize\bfseries}}
+\newcommand{\templatehint}[1]{\par\noindent{\small\color{gray}#1}\par}
+\begin{document}
+\setcounter{page}{1}
+
+
+\begin{center}{\Large\bfseries 论文题目}\end{center}
+
+\begin{center}
+    \large\bfseries\textbf{摘要}
+\end{center}
+ 
+
+【填写摘要：概述研究目标、主要模型与方法、关键结果及结论。仅填写本队实际完成的工作，不保留本提示。】 
+
+关键词：【关键词1】；【关键词2】；【关键词3】 
+
+\templatehint{【模板使用提示，提交前整段删除：本页仅保留标题、摘要和关键词，原则上不超过一页，无需英文摘要。所有【】内容均须替换或删除。正文不超过30页，不设置目录；附录页数不限。默认字体字号仅供排版使用，并非统一规定。全文及支撑材料须匿名，文件属性、批注和修订记录也应检查。核心建模与分析须体现本队自主实质贡献；全部或实质全部由AI代作、仅复制拼接的作品将取消评奖资格，认定将综合材料核实，不唯检测率。】}
+
+\clearpage
+
+\section{XXXXXX}
+
+\section{XXXXXX}
+\section{XXXXXX}
+\subsection{XXXXX}
+\subsection{XXXXX}
+\subsection{XXXXX}
+\subsection{XXXXX}
+\section{XXXXXX}
+\section{XXXXXX}
+
+\templatehint{【写作提示，提交前删除：自行选择并论证方法，不受本模板算法或指标限制。说明各变量在决策时是否可得，避免使用未来信息；图表、公式及数据来源应按需编号并引用。】}
+
+ 
+
+\section*{AI工具使用声明}
+
+\templatehint{【以下两项必须据实二选一；提交前删除另一项、选项标签和本提示。仅语言润色也属于使用AI。】}
+
+选项一 未使用AI工具\par
+
+本参赛队在竞赛过程中未使用任何 AI 工具。\par
+
+选项二 使用AI工具\par
+
+本参赛队在竞赛过程中使用了 AI 工具，主要用于【据实填写简要用途】，详细使用情况见支撑材料。\par
+
+\templatehint{【使用AI时，支撑材料必须包含“AI工具使用详情.pdf”，并在附录文件清单中列明。详情应说明工具名称及版本或型号、使用目的与环节、主要提示方式与使用过程，以及输出采纳、人工修改和核验情况；仅语言润色可不填写最后一项，但仍须披露并提交详情。提交前删除本提示。】}
+
+\begin{thebibliography}{99}
+
+\item[] \templatehint{【按实际引用填写；在正文相应位置标注序号。下列条目仅为格式占位，提交前替换或删除。】}
+
+\bibitem{ref1} 【作者】. 【文献题名】. 【期刊或出版信息】，【年份】：【页码】.
+
+\bibitem{ref2} 【作者或机构】. 【网络资料题名】. 【网址】，访问日期：【年-月-日】.
+
+\end{thebibliography}
+
+\clearpage
+
+\begingroup\small\linespread{1.0}\selectfont
+
+\section*{附录}
+
+\subsection*{附录A 支撑材料文件清单}
+
+\templatehint{【按实际提交文件逐项填写相对路径、内容用途及对应论文位置；删除未使用的示例项。清单须与压缩包一致，不写本机含身份信息的绝对路径。】}
+
+1. 【程序文件相对路径】；用途：【填写】；对应位置：【章节或图表】。\par
+
+2. 【自主查阅使用的数据资料相对路径】；来源与用途：【填写】；对应位置：【填写】。\par
+
+3. 【中间结果或图表文件相对路径】；用途：【填写】；对应位置：【填写】。\par
+
+4. AI工具使用详情.pdf；用途：AI工具使用披露；对应位置：AI工具使用声明。【仅使用AI时保留且必须提交】\par
+
+\templatehint{【仅在确实无任何支撑材料且未使用AI时，删除上述清单示例并保留以下声明；其他情形删除该声明。使用AI不得以无支撑材料为由免交详情。】}
+
+本论文没有支撑材料。\par
+
+\subsection*{附录B 完整源程序与运行说明}
+
+\templatehint{【使用程序时，按文件逐一粘贴全部完整、可运行的源代码，不能只给片段、截图或链接。另填软件及版本、依赖、输入文件、运行顺序或命令、输出文件与论文结果对应关系。支撑材料中同步提交全部可运行程序。】}
+
+文件：【相对路径】；环境与依赖：【填写】；输入：【填写】；运行方式：【填写】；输出及对应结果：【填写】。\par
+
+\begin{Verbatim}[breaklines=true,breakanywhere=true,fontsize=\small]
+【在此粘贴该文件完整源代码；每个文件重复上述说明与代码区域。】
+\end{Verbatim}
+
+Excel【使用时填写，否则删除】：工作簿及工作表【填写】；单元格范围及完整公式【填写】；交互命令、参数与操作顺序【填写】；如使用宏，附完整源码及运行方式。\par
+
+SPSS【使用时填写，否则删除】：数据输入【填写】；全部语法或交互命令、参数与执行顺序【填写】；输出及对应结果【填写】。\par
+
+\templatehint{【确实没有用到任何程序时，删除本节程序占位并保留以下声明；否则删除该声明。提交前删除本提示。】}
+
+本论文没有用到程序。\par
+
+\templatehint{【提交前删除：论文提交为单个PDF或Word文件，建议PDF，不超过20 MB且不压缩。支撑材料打包为单个ZIP或RAR，不超过20 MB；赛题提供的原始数据无需重复提交。论文及支撑材料均不包含承诺书和编号专用页。最后检查可运行性、结果一致性及匿名性。】}
+
+\endgroup
+
+\end{document}
